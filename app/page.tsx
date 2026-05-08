@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ShieldCheck, FileText, Wrench, ArrowRight, CheckCircle2, Star, ChevronDown, Car, Banknote, MapPin, Users, User } from 'lucide-react';
+import { FadeUp } from '@/components/FadeUp';
 
 export default function Home() {
   return (
@@ -20,48 +21,52 @@ export default function Home() {
         </div>
         
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl text-center">
-          <div className="inline-flex items-center rounded-none border border-white/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium text-white mb-10 backdrop-blur-md">
-            <ShieldCheck className="w-3.5 h-3.5 mr-3" />
-            Din bilforhandler i Vennesla
-          </div>
-          <h1 className="text-5xl md:text-7xl lg:text-[90px] font-[300] tracking-tight mb-8 leading-[0.95] text-white">
-            Kvalitetsbiler til <br className="hidden md:block"/>
-            <span className="italic">konkurransedyktige</span> priser
-          </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-14 max-w-2xl mx-auto leading-relaxed font-light">
-            Vi vet at bilkjøp kan føles usikkert. Derfor leveres alle våre biler med ny tilstandsrapport, fersk EU-kontroll og inntil 12 måneders garanti.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link href="/biler" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none bg-white px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-black hover:bg-slate-200 transition-colors">
-              Se våre biler
-              <ArrowRight className="w-3.5 h-3.5 ml-3" />
-            </Link>
-            <Link href="/selg-bil" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none border border-white/20 bg-transparent px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-white hover:bg-white/10 transition-colors">
-              Vi selger bilen for deg
-            </Link>
-          </div>
+          <FadeUp>
+            <div className="inline-flex items-center rounded-none border border-white/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium text-white mb-10 backdrop-blur-md">
+              <ShieldCheck className="w-3.5 h-3.5 mr-3" />
+              Din bilforhandler i Vennesla
+            </div>
+            <h1 className="text-5xl md:text-7xl lg:text-[90px] font-[300] tracking-tight mb-8 leading-[0.95] text-white">
+              Kvalitetsbiler til <br className="hidden md:block"/>
+              <span className="italic">konkurransedyktige</span> priser
+            </h1>
+            <p className="text-lg md:text-xl text-slate-300 mb-14 max-w-2xl mx-auto leading-relaxed font-light">
+              Vi vet at bilkjøp kan føles usikkert. Derfor leveres alle våre biler med ny tilstandsrapport, fersk EU-kontroll og inntil 12 måneders garanti.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Link href="/biler" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none bg-white px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-black hover:bg-slate-200 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+                Se våre biler
+                <ArrowRight className="w-3.5 h-3.5 ml-3" />
+              </Link>
+              <Link href="/selg-bil" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none border border-white/20 bg-transparent px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-white hover:bg-white/10 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+                Vi selger bilen for deg
+              </Link>
+            </div>
+          </FadeUp>
           
-          <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 pt-10 border-t border-white/10 max-w-3xl mx-auto">
-            <div className="flex flex-col items-center justify-center text-center space-y-3">
-              <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
-              <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">12 mnd garanti</span>
+          <FadeUp delay={0.2}>
+            <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 pt-10 border-t border-white/10 max-w-3xl mx-auto">
+              <div className="flex flex-col items-center justify-center text-center space-y-3">
+                <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
+                <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">12 mnd garanti</span>
+              </div>
+              <div className="flex flex-col items-center justify-center text-center space-y-3">
+                <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
+                <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">Ny tilstandsrapport</span>
+              </div>
+              <div className="flex flex-col items-center justify-center text-center space-y-3">
+                <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
+                <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">Fri for heftelser</span>
+              </div>
             </div>
-            <div className="flex flex-col items-center justify-center text-center space-y-3">
-              <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
-              <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">Ny tilstandsrapport</span>
-            </div>
-            <div className="flex flex-col items-center justify-center text-center space-y-3">
-              <CheckCircle2 className="w-6 h-6 text-white/60 mb-2" />
-              <span className="text-xs uppercase tracking-widest text-slate-300 font-medium">Fri for heftelser</span>
-            </div>
-          </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* WHY CHOOSE US / TRUST SECTION */}
       <section className="py-32 bg-[#fdfcfb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-24">
+          <FadeUp className="text-center max-w-3xl mx-auto mb-24">
             <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Om oss</h2>
             <h3 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-8 text-[#111111]">
               Hvorfor velge Dream Car?
@@ -69,44 +74,44 @@ export default function Home() {
             <p className="text-[#666666] text-lg font-light leading-relaxed">
               Å kjøpe privat sparer deg kanskje for noen tusenlapper der og da, men kan koste deg dyrt hvis noe går galt. Slik sikrer vi deg et trygt bilhold.
             </p>
-          </div>
+          </FadeUp>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="bg-transparent p-10 relative overflow-hidden group">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/20 transition-colors duration-500" />
-              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 group-hover:w-full" />
-              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black">
+            <FadeUp delay={0.1} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
+              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
+              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <ShieldCheck className="w-5 h-5 stroke-[1.5]" />
               </div>
               <h4 className="text-xl font-medium mb-4 text-[#111111]">12 måneders garanti</h4>
               <p className="text-[#666666] font-light leading-relaxed text-sm">
                 Gjennom vår partner Fragus tilbyr vi omfattende bruktbilgaranti. Skulle noe uforutsett skje med motor eller drivverk, er du dekket.
               </p>
-            </div>
+            </FadeUp>
             
-            <div className="bg-transparent p-10 relative overflow-hidden group">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/20 transition-colors duration-500" />
-              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 group-hover:w-full" />
-              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black">
+            <FadeUp delay={0.2} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
+              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
+              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <FileText className="w-5 h-5 stroke-[1.5]" />
               </div>
               <h4 className="text-xl font-medium mb-4 text-[#111111]">Tilstandsrapport</h4>
               <p className="text-[#666666] font-light leading-relaxed text-sm">
                 Vi stoler ikke bare på magefølelsen. Alle biler gjennomgår en grundig sjekk av uavhengig verksted før de legges ut for salg. Du får fullt innsyn.
               </p>
-            </div>
+            </FadeUp>
             
-            <div className="bg-transparent p-10 relative overflow-hidden group">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/20 transition-colors duration-500" />
-              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 group-hover:w-full" />
-              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black">
+            <FadeUp delay={0.3} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
+              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
+              <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <Wrench className="w-5 h-5 stroke-[1.5]" />
               </div>
               <h4 className="text-xl font-medium mb-4 text-[#111111]">Ny EU-kontroll</h4>
               <p className="text-[#666666] font-light leading-relaxed text-sm">
                 Vi leverer bilene med fersk EU-kontroll. Det betyr at bilen er teknisk sikker og lovlig å kjøre, og du slipper denne utgiften det første året.
               </p>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -115,17 +120,17 @@ export default function Home() {
       <section className="py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="order-2 lg:order-1 relative h-[600px] lg:h-[700px] rounded-none overflow-hidden border border-black/5">
+            <FadeUp className="order-2 lg:order-1 relative h-[600px] lg:h-[700px] rounded-none overflow-hidden border border-black/5 group">
               <Image 
                 src="/dreamcar2.avif" 
                 alt="Kunde får overlevert bil" 
                 fill 
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-700 ease-out" />
               <div className="absolute bottom-10 left-10 right-10">
-                <div className="bg-white/10 backdrop-blur-md p-8 rounded-none border border-white/20">
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-none border border-white/20 transition-transform duration-500 ease-out translate-y-2 group-hover:translate-y-0">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex text-white gap-1">
                       <Star className="w-4 h-4 fill-current" />
@@ -139,8 +144,8 @@ export default function Home() {
                   <p className="italic text-base text-white/90 leading-relaxed">&quot;Veldig ryddig prosess. Fikk se tilstandsrapporten med en gang, og de ordnet finansiering på kort tid.&quot;</p>
                 </div>
               </div>
-            </div>
-            <div className="order-1 lg:order-2">
+            </FadeUp>
+            <FadeUp className="order-1 lg:order-2">
               <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Prosessen</h2>
               <h3 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-8 text-[#111111] leading-tight">
                 Slik fungerer en bilhandel hos oss
@@ -156,7 +161,7 @@ export default function Home() {
                     <div className="w-10 h-10 border border-black/20 bg-[#fdfcfb] text-black flex items-center justify-center font-medium relative z-10 text-sm italic group-hover:border-black group-hover:bg-black group-hover:text-white transition-all duration-300">01</div>
                   </div>
                   <div className="pb-4">
-                    <h4 className="text-xl font-medium mb-3 text-[#111111]">Finn bilen og les rapporten</h4>
+                    <h4 className="text-xl font-medium mb-3 text-[#111111] transition-colors duration-300">Finn bilen og les rapporten</h4>
                     <p className="text-[#666666] font-light leading-relaxed text-sm">Alle våre annonser inneholder ærlige bilder og full tilstandsrapport. Du vet nøyaktig hva du ser på før du kontakter oss.</p>
                   </div>
                 </div>
@@ -166,7 +171,7 @@ export default function Home() {
                     <div className="w-10 h-10 border border-black/20 bg-[#fdfcfb] text-black flex items-center justify-center font-medium relative z-10 text-sm italic group-hover:border-black group-hover:bg-black group-hover:text-white transition-all duration-300">02</div>
                   </div>
                   <div className="pb-4">
-                    <h4 className="text-xl font-medium mb-3 text-[#111111]">Prøvekjøring og finansiering</h4>
+                    <h4 className="text-xl font-medium mb-3 text-[#111111] transition-colors duration-300">Prøvekjøring og finansiering</h4>
                     <p className="text-[#666666] font-light leading-relaxed text-sm">Kom innom for en uforpliktende prøvetur. Mens du kjører, kan vi sette opp et uforpliktende tilbud på finansiering.</p>
                   </div>
                 </div>
@@ -175,12 +180,12 @@ export default function Home() {
                     <div className="w-10 h-10 border border-black/20 bg-[#fdfcfb] text-black flex items-center justify-center font-medium relative z-10 text-sm italic group-hover:border-black group-hover:bg-black group-hover:text-white transition-all duration-300">03</div>
                   </div>
                   <div className="pb-4">
-                    <h4 className="text-xl font-medium mb-3 text-[#111111]">Kontrakt og overlevering</h4>
+                    <h4 className="text-xl font-medium mb-3 text-[#111111] transition-colors duration-300">Kontrakt og overlevering</h4>
                     <p className="text-[#666666] font-light leading-relaxed text-sm">Vi bruker standardiserte kontrakter. Bilen overleveres nyvasket, med garanti og alle papirer i orden. Vi ordner omregistreringen på stedet.</p>
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -190,36 +195,38 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
             {/* Financing */}
-            <div className="bg-transparent p-12 lg:p-16 border border-white/10 flex flex-col h-full group hover:bg-white/5 transition-colors duration-500">
-              <Banknote className="w-8 h-8 text-white/50 mb-8" />
-              <h3 className="font-heading text-3xl font-[300] mb-6">Finansiering <span className="italic">på minuttet</span></h3>
-              <p className="text-white/60 mb-10 flex-grow leading-relaxed font-light">
+            <FadeUp delay={0.1} className="bg-transparent p-12 lg:p-16 border border-white/10 flex flex-col h-full group hover:bg-white/5 hover:border-white/20 transition-all duration-500 ease-out cursor-pointer relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-t from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+              <Banknote className="w-8 h-8 text-white/50 mb-8 group-hover:text-white group-hover:scale-110 transition-all duration-500 ease-out" />
+              <h3 className="font-heading text-3xl font-[300] mb-6 relative z-10">Finansiering <span className="italic">på minuttet</span></h3>
+              <p className="text-white/60 mb-10 flex-grow leading-relaxed font-light relative z-10">
                 Gjennom vårt samarbeid med ledende aktører tilbyr vi svært konkurransedyktige betingelser på billån og forsikring. Vi ordner papirarbeidet mens du venter.
               </p>
-              <ul className="space-y-4 mb-12">
+              <ul className="space-y-4 mb-12 relative z-10">
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Lån fra 0,- egenkapital</li>
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Svar på få minutter</li>
               </ul>
-              <Link href="/finansiering" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white hover:text-white/70 transition-colors">
-                Les mer <ArrowRight className="w-3.5 h-3.5 ml-3" />
+              <Link href="/finansiering" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
+                Les mer <ArrowRight className="w-3.5 h-3.5 ml-3 transition-transform duration-300 ease-out group-hover:translate-x-2" />
               </Link>
-            </div>
+            </FadeUp>
 
             {/* Sell your car */}
-            <div className="bg-transparent p-12 lg:p-16 border border-white/10 flex flex-col h-full group hover:bg-white/5 transition-colors duration-500">
-              <Car className="w-8 h-8 text-white/50 mb-8" />
-              <h3 className="font-heading text-3xl font-[300] mb-6">Vi selger bilen <span className="italic">for deg</span></h3>
-              <p className="text-white/60 mb-10 flex-grow leading-relaxed font-light">
+            <FadeUp delay={0.2} className="bg-transparent p-12 lg:p-16 border border-white/10 flex flex-col h-full group hover:bg-white/5 hover:border-white/20 transition-all duration-500 ease-out cursor-pointer relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-t from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+              <Car className="w-8 h-8 text-white/50 mb-8 group-hover:text-white group-hover:scale-110 transition-all duration-500 ease-out" />
+              <h3 className="font-heading text-3xl font-[300] mb-6 relative z-10">Vi selger bilen <span className="italic">for deg</span></h3>
+              <p className="text-white/60 mb-10 flex-grow leading-relaxed font-light relative z-10">
                 Å selge bil privat kan være tidkrevende. La oss ta oss av klargjøring, fotografering, annonsering, visninger og papirarbeid. Du får oppgjøret.
               </p>
-              <ul className="space-y-4 mb-12">
+              <ul className="space-y-4 mb-12 relative z-10">
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Vi håndterer alle henvendelser</li>
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Trygt og raskt oppgjør</li>
               </ul>
-              <Link href="/selg-bil" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white hover:text-white/70 transition-colors">
-                Be om vurdering <ArrowRight className="w-3.5 h-3.5 ml-3" />
+              <Link href="/selg-bil" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
+                Be om vurdering <ArrowRight className="w-3.5 h-3.5 ml-3 transition-transform duration-300 ease-out group-hover:translate-x-2" />
               </Link>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -228,27 +235,27 @@ export default function Home() {
       <section className="py-32 bg-[#fdfcfb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
+            <FadeUp delay={0.1} className="order-2 lg:order-1 grid grid-cols-2 gap-4 group">
               <div className="space-y-4 pt-12">
-                <div className="relative h-[300px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 bg-slate-100 flex items-center justify-center">
-                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår salgssjef" fill className="object-cover opacity-50" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply">
+                <div className="relative h-[300px] rounded-none overflow-hidden bg-slate-100 flex items-center justify-center">
+                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår salgssjef" fill className="object-cover opacity-50 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-700 ease-out" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply pointer-events-none">
                     <User className="w-20 h-20 text-slate-400 stroke-[1]" />
                   </div>
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="relative h-[400px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 bg-slate-100 flex items-center justify-center">
-                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår daglige leder" fill className="object-cover opacity-50" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply">
+                <div className="relative h-[400px] rounded-none overflow-hidden bg-slate-100 flex items-center justify-center">
+                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår daglige leder" fill className="object-cover opacity-50 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-700 ease-out" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply pointer-events-none">
                     <User className="w-24 h-24 text-slate-400 stroke-[1]" />
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
             
-            <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center rounded-none border border-black/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium mb-10">
+            <FadeUp className="order-1 lg:order-2">
+              <div className="inline-flex items-center rounded-none border border-black/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium mb-10 text-black/60 transition-colors duration-300">
                 <Users className="w-3.5 h-3.5 mr-3" />
                 Lokale og tilgjengelige
               </div>
@@ -263,22 +270,22 @@ export default function Home() {
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-12">
-                <div>
-                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3">Besøk oss</h4>
-                  <p className="text-sm font-medium text-[#111111]">Bilveien 1</p>
+                <div className="group/item">
+                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Besøk oss</h4>
+                  <p className="text-sm font-medium text-[#111111] transition-colors duration-300">Bilveien 1</p>
                   <p className="text-sm text-[#666666] font-light">4700 Vennesla</p>
                 </div>
-                <div>
-                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3">Kontakt</h4>
+                <div className="group/item">
+                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Kontakt</h4>
                   <p className="text-sm font-medium text-[#111111]">383 60 066</p>
                   <p className="text-sm text-[#666666] font-light">post@dreamcar.no</p>
                 </div>
               </div>
 
-              <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none bg-[#111111] px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-colors">
+              <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none bg-[#111111] px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
                 Ta kontakt
               </Link>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -286,12 +293,12 @@ export default function Home() {
       {/* FAQ */}
       <section className="py-32 border-t border-black/5 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="text-center mb-20">
+          <FadeUp className="text-center mb-20">
             <h2 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-6 text-[#111111]">Vanlige spørsmål</h2>
             <p className="text-[#666666] font-light text-lg">Ting kundene våre ofte lurer på i forkant.</p>
-          </div>
+          </FadeUp>
           
-          <div className="space-y-2">
+          <FadeUp delay={0.1} className="space-y-2">
             {[
               {
                 q: "Hva dekker egentlig bruktbilgarantien?",
@@ -322,7 +329,7 @@ export default function Home() {
                 </div>
               </details>
             ))}
-          </div>
+          </FadeUp>
         </div>
       </section>
     </div>
