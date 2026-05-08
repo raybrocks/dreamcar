@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-[#111111]/95 text-slate-50 backdrop-blur-md supports-[backdrop-filter]:bg-[#111111]/95 transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-[#111111] text-slate-50 backdrop-blur-md supports-[backdrop-filter]:bg-[#111111] transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top bar - Trust & Contact */}
         <div className="hidden md:flex items-center justify-between py-2.5 border-b border-white/5 text-xs uppercase tracking-widest text-slate-400 font-medium">
