@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Shield, ThumbsUp, Users, Target } from 'lucide-react';
+import { Shield, ThumbsUp, Users, Target, User } from 'lucide-react';
 import Link from 'next/link';
 
 export default function OmOss() {
@@ -32,15 +32,18 @@ export default function OmOss() {
           </div>
         </div>
         
-        <div className="relative aspect-[4/5] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-black/5">
+        <div className="relative aspect-[4/5] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-black/5 bg-slate-100 flex items-center justify-center">
           <Image 
-            src="https://picsum.photos/seed/n5/800/1000" 
+            src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=800&auto=format&fit=crop" 
             alt="Dream Car team" 
             fill 
-            className="object-cover"
+            className="object-cover opacity-50"
             sizes="(max-width: 1024px) 100vw, 50vw"
             referrerPolicy="no-referrer"
           />
+          <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply">
+            <User className="w-32 h-32 text-slate-400 stroke-[1]" />
+          </div>
         </div>
       </div>
 

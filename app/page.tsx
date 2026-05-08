@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ShieldCheck, FileText, Wrench, ArrowRight, CheckCircle2, Star, ChevronDown, Car, Banknote, MapPin, Users } from 'lucide-react';
+import { ShieldCheck, FileText, Wrench, ArrowRight, CheckCircle2, Star, ChevronDown, Car, Banknote, MapPin, Users, User } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -230,13 +230,19 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
               <div className="space-y-4 pt-12">
-                <div className="relative h-[300px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                  <Image src="https://picsum.photos/seed/dealership1/400/600" alt="Våre lokaler" fill className="object-cover" referrerPolicy="no-referrer" />
+                <div className="relative h-[300px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 bg-slate-100 flex items-center justify-center">
+                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår salgssjef" fill className="object-cover opacity-50" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply">
+                    <User className="w-20 h-20 text-slate-400 stroke-[1]" />
+                  </div>
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="relative h-[400px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                  <Image src="https://picsum.photos/seed/team/400/600" alt="Vårt team" fill className="object-cover" referrerPolicy="no-referrer" />
+                <div className="relative h-[400px] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 bg-slate-100 flex items-center justify-center">
+                  <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår daglige leder" fill className="object-cover opacity-50" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply">
+                    <User className="w-24 h-24 text-slate-400 stroke-[1]" />
+                  </div>
                 </div>
               </div>
             </div>
