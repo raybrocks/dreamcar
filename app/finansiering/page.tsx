@@ -7,7 +7,7 @@ export default function Finansiering() {
   return (
     <div className="container mx-auto px-4 py-24 lg:py-32 max-w-6xl">
       <FadeUp className="text-center mb-24 cursor-default">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Tjenester</h2>
+        <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Tjenester</h2>
         <h1 className="font-heading text-5xl md:text-6xl font-[300] tracking-tight mb-8 text-[#111111]">
           Finansiering & <span className="italic">Forsikring</span>
         </h1>
@@ -17,7 +17,7 @@ export default function Finansiering() {
       </FadeUp>
 
       <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-32">
-        <FadeUp delay={0.1} className="bg-transparent border border-black/5 p-10 text-center rounded-none group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
+        <FadeUp delay={0.1} className="bg-transparent border border-black/5 p-10 text-center rounded-lg group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
           <div className="w-12 h-12 flex items-center justify-center mx-auto mb-8 border border-black/10 text-[#111111] group-hover:bg-black group-hover:text-white transition-all duration-300 ease-out group-hover:scale-110">
             <CheckCircle2 className="w-5 h-5 stroke-[1.5]" />
           </div>
@@ -27,7 +27,7 @@ export default function Finansiering() {
           </p>
         </FadeUp>
         
-        <FadeUp delay={0.2} className="bg-transparent border border-black/5 p-10 text-center rounded-none group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
+        <FadeUp delay={0.2} className="bg-transparent border border-black/5 p-10 text-center rounded-lg group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
           <div className="w-12 h-12 flex items-center justify-center mx-auto mb-8 border border-black/10 text-[#111111] group-hover:bg-black group-hover:text-white transition-all duration-300 ease-out group-hover:scale-110">
             <Clock className="w-5 h-5 stroke-[1.5]" />
           </div>
@@ -37,7 +37,7 @@ export default function Finansiering() {
           </p>
         </FadeUp>
 
-        <FadeUp delay={0.3} className="bg-transparent border border-black/5 p-10 text-center rounded-none group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
+        <FadeUp delay={0.3} className="bg-transparent border border-black/5 p-10 text-center rounded-lg group hover:border-black/20 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 ease-out">
           <div className="w-12 h-12 flex items-center justify-center mx-auto mb-8 border border-black/10 text-[#111111] group-hover:bg-black group-hover:text-white transition-all duration-300 ease-out group-hover:scale-110">
             <Banknote className="w-5 h-5 stroke-[1.5]" />
           </div>
@@ -49,7 +49,7 @@ export default function Finansiering() {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-        <FadeUp className="lg:sticky top-32">
+        <FadeUp>
           <ShieldCheck className="w-10 h-10 text-[#111111]/40 mb-8 stroke-[1.5]" />
           <h2 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-8 text-[#111111] leading-tight">
             Trygghet gjennom <br/><span className="italic">hele avtalen</span>
@@ -73,7 +73,7 @@ export default function Finansiering() {
           </ul>
         </FadeUp>
 
-        <FadeUp delay={0.2} className="bg-transparent border border-black/10 p-8 md:p-12 rounded-none">
+        <FadeUp delay={0.2} className="bg-transparent border border-black/10 p-8 md:p-12 rounded-lg">
           <div className="mb-10 text-center">
             <h3 className="font-heading text-3xl font-[300] tracking-tight mb-3 text-[#111111]">Få et tilbud</h3>
             <p className="text-[#666666] font-light text-sm">Legg igjen en beskjed, så ser vi uforpliktende på saken.</p>
@@ -82,20 +82,20 @@ export default function Finansiering() {
           <form className="space-y-6">
             <div className="space-y-2">
               <label htmlFor="name" className="text-xs uppercase tracking-widest text-black/50 font-medium">Navn</label>
-              <input type="text" id="name" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors" placeholder="Ola Nordmann" required />
+              <input type="text" id="name" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors" placeholder="Ola Nordmann" required />
             </div>
             
             <div className="space-y-2">
               <label htmlFor="phone" className="text-xs uppercase tracking-widest text-black/50 font-medium">E-post eller telefon</label>
-              <input type="text" id="phone" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors" placeholder="post@eksempel.no" required />
+              <input type="text" id="phone" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors" placeholder="post@eksempel.no" required />
             </div>
 
             <div className="space-y-2">
               <label htmlFor="message" className="text-xs uppercase tracking-widest text-black/50 font-medium">Melding</label>
-              <textarea id="message" rows={5} className="flex min-h-[120px] w-full rounded-none border border-black/20 bg-transparent px-4 py-3 text-sm focus-visible:outline-none focus:border-black transition-colors resize-y" placeholder="Jeg ønsker tilbud på..."></textarea>
+              <textarea id="message" rows={5} className="flex min-h-[120px] w-full rounded-md border border-black/20 bg-transparent px-4 py-3 text-sm focus-visible:outline-none focus:border-black transition-colors resize-y" placeholder="Jeg ønsker tilbud på..."></textarea>
             </div>
             
-            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center rounded-none bg-[#111111] px-8 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#111111] px-8 py-4 text-xs uppercase tracking-widest font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
               <Send className="mr-3 h-3.5 w-3.5" />
               Send forespørsel
             </button>

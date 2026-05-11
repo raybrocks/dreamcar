@@ -45,15 +45,15 @@ export default function Navbar() {
         {/* Menu & CTA Row (Desktop) */}
         <div className="hidden md:flex items-center justify-center pb-6 relative">
           <nav className="flex items-center space-x-10">
-            <Link href="/biler" className="text-xs uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Biler til salgs</Link>
-            <Link href="/selg-bil" className="text-xs uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Selg bilen din</Link>
-            <Link href="/finansiering" className="text-xs uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Finansiering & Forsikring</Link>
-            <Link href="/bildeler" className="text-xs uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Bildeler</Link>
-            <Link href="/om-oss" className="text-xs uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Om oss</Link>
+            <Link href="/biler" className="text-xs uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Biler til salgs</Link>
+            <Link href="/selg-bil" className="text-xs uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Selg bilen din</Link>
+            <Link href="/finansiering" className="text-xs uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Finansiering & Forsikring</Link>
+            <Link href="/bildeler" className="text-xs uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Bildeler</Link>
+            <Link href="/om-oss" className="text-xs uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-white after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300 after:ease-out">Om oss</Link>
           </nav>
 
           <div className="absolute right-0">
-            <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none border border-white/20 bg-transparent px-8 py-2.5 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-white hover:text-black transition-all duration-300 ease-out">
+            <Link href="/kontakt" className="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-8 py-2.5 text-xs uppercase tracking-widest font-medium text-white hover:bg-white hover:text-black transition-all duration-300 ease-out">
               Kontakt oss
             </Link>
           </div>
@@ -63,13 +63,13 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden pb-8 animate-in slide-in-from-top-4 fade-in duration-300">
             <nav className="flex flex-col space-y-6 items-center pt-4">
-              <Link href="/biler" className="text-sm uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Biler til salgs</Link>
-              <Link href="/selg-bil" className="text-sm uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Selg bilen din</Link>
-              <Link href="/finansiering" className="text-sm uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Finansiering & Forsikring</Link>
-              <Link href="/bildeler" className="text-sm uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Bildeler</Link>
-              <Link href="/om-oss" className="text-sm uppercase tracking-[0.15em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Om oss</Link>
+              <Link href="/biler" className="text-sm uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Biler til salgs</Link>
+              <Link href="/selg-bil" className="text-sm uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Selg bilen din</Link>
+              <Link href="/finansiering" className="text-sm uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Finansiering & Forsikring</Link>
+              <Link href="/bildeler" className="text-sm uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Bildeler</Link>
+              <Link href="/om-oss" className="text-sm uppercase tracking-[0.1em] font-medium text-slate-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Om oss</Link>
               <div className="pt-8 border-t border-white/5 w-full flex justify-center">
-                <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none border border-white/20 bg-transparent px-10 py-3 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-white hover:text-black transition-all duration-300 ease-out w-full max-w-[250px]" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/kontakt" className="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-10 py-3 text-xs uppercase tracking-widest font-medium text-white hover:bg-white hover:text-black transition-all duration-300 ease-out w-full max-w-[250px]" onClick={() => setIsMenuOpen(false)}>
                   Kontakt oss
                 </Link>
               </div>

@@ -6,7 +6,7 @@ export default function Kontakt() {
   return (
     <div className="container mx-auto px-4 py-24 lg:py-32 max-w-6xl">
       <FadeUp className="text-center mb-24 cursor-default">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Ta kontakt</h2>
+        <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Ta kontakt</h2>
         <h1 className="font-heading text-5xl md:text-6xl font-[300] tracking-tight mb-8 text-[#111111]">
           Kontakt <span className="italic">oss</span>
         </h1>
@@ -18,7 +18,7 @@ export default function Kontakt() {
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-16 items-start">
         {/* Kontaktinfo */}
         <div className="space-y-12">
-          <FadeUp delay={0.1} className="bg-transparent border border-black/10 rounded-none p-10 md:p-12 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-black/20 transition-all duration-500 ease-out">
+          <FadeUp delay={0.1} className="bg-transparent border border-black/10 rounded-lg p-10 md:p-12 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-black/20 transition-all duration-500 ease-out">
             <h2 className="text-2xl font-medium mb-8 border-b border-black/5 pb-6 text-[#111111]">Kontaktinformasjon</h2>
             
             <div className="space-y-8">
@@ -49,7 +49,7 @@ export default function Kontakt() {
             </div>
           </FadeUp>
 
-          <FadeUp delay={0.2} className="bg-transparent border border-black/10 rounded-none p-10 md:p-12 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-black/20 transition-all duration-500 ease-out">
+          <FadeUp delay={0.2} className="bg-transparent border border-black/10 rounded-lg p-10 md:p-12 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-black/20 transition-all duration-500 ease-out">
             <h2 className="text-2xl font-medium mb-8 border-b border-black/5 pb-6 text-[#111111]">Ansatte</h2>
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="flex flex-col space-y-2 group relative">
@@ -96,7 +96,7 @@ export default function Kontakt() {
         </div>
 
         {/* Kontaktskjema */}
-        <FadeUp delay={0.3} className="bg-[#111111] border border-transparent rounded-none p-10 md:p-12 text-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 ease-out">
+        <FadeUp delay={0.3} className="bg-[#111111] border border-transparent rounded-lg p-10 md:p-12 text-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 ease-out">
           <div className="mb-10 min-h-[4rem]">
             <h2 className="font-heading text-3xl font-[300] mb-3">Send oss en melding</h2>
             <p className="text-white/60 font-light text-sm">Vi svarer deg så fort vi kan innenfor våre åpningstider.</p>
@@ -106,23 +106,23 @@ export default function Kontakt() {
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-xs uppercase tracking-widest text-white/50 font-medium">Navn</label>
-                <input type="text" id="name" className="flex h-12 w-full rounded-none border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="Ditt navn" required />
+                <input type="text" id="name" className="flex h-12 w-full rounded-md border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="Ditt navn" required />
               </div>
               <div className="space-y-2">
                 <label htmlFor="phone" className="text-xs uppercase tracking-widest text-white/50 font-medium">Telefon</label>
-                <input type="tel" id="phone" className="flex h-12 w-full rounded-none border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="Telefon" />
+                <input type="tel" id="phone" className="flex h-12 w-full rounded-md border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="Telefon" />
               </div>
             </div>
 
             <div className="space-y-2">
               <label htmlFor="email" className="text-xs uppercase tracking-widest text-white/50 font-medium">E-post *</label>
-              <input type="email" id="email" className="flex h-12 w-full rounded-none border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="din@epost.no" required />
+              <input type="email" id="email" className="flex h-12 w-full rounded-md border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300" placeholder="din@epost.no" required />
             </div>
 
             <div className="space-y-2">
               <label htmlFor="subject" className="text-xs uppercase tracking-widest text-white/50 font-medium">Hva gjelder det?</label>
               <div className="relative">
-                <select id="subject" className="flex h-12 w-full rounded-none border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300 appearance-none">
+                <select id="subject" className="flex h-12 w-full rounded-sm border border-white/20 bg-transparent px-4 py-2 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300 appearance-none">
                   <option value="salg" className="text-black">Kjøp av bil</option>
                   <option value="kjop" className="text-black">Salg av bil / Kommisjon</option>
                   <option value="deler" className="text-black">Bildeler</option>
@@ -133,10 +133,10 @@ export default function Kontakt() {
 
             <div className="space-y-2">
               <label htmlFor="message" className="text-xs uppercase tracking-widest text-white/50 font-medium">Melding *</label>
-              <textarea id="message" rows={5} className="flex min-h-[120px] w-full rounded-none border border-white/20 bg-transparent px-4 py-3 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300 resize-y" placeholder="Skriv meldingen din her..." required></textarea>
+              <textarea id="message" rows={5} className="flex min-h-[120px] w-full rounded-md border border-white/20 bg-transparent px-4 py-3 text-sm text-white focus-visible:outline-none focus:border-white focus:bg-white/5 transition-all duration-300 resize-y" placeholder="Skriv meldingen din her..." required></textarea>
             </div>
             
-            <button type="button" className="inline-flex w-full items-center justify-center rounded-none bg-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-medium text-black hover:bg-slate-200 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98] mt-8">
+            <button type="button" className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-4 text-xs uppercase tracking-widest font-medium text-black hover:bg-slate-200 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98] mt-8">
               <Send className="mr-3 h-3.5 w-3.5" />
               Send
             </button>

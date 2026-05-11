@@ -7,7 +7,7 @@ export default function SelgBil() {
   return (
     <div className="container mx-auto px-4 py-24 lg:py-32 max-w-6xl">
       <FadeUp className="text-center mb-24 cursor-default">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Tjenester</h2>
+        <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Tjenester</h2>
         <h1 className="font-heading text-5xl md:text-6xl font-[300] tracking-tight mb-8 text-[#111111]">
           La oss håndtere salget <span className="italic">for deg</span>
         </h1>
@@ -16,7 +16,7 @@ export default function SelgBil() {
         </p>
       </FadeUp>
 
-      <FadeUp delay={0.1} className="border border-black/10 rounded-none p-12 lg:p-16 mb-32 bg-[#fdfcfb]">
+      <FadeUp delay={0.1} className="border border-black/10 rounded-lg p-12 lg:p-16 mb-32 bg-[#fdfcfb]">
         <h2 className="font-heading text-3xl font-[300] mb-12 text-center text-[#111111] tracking-tight">Slik fungerer prosessen</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative z-10">
@@ -67,7 +67,7 @@ export default function SelgBil() {
 
       {/* Kommisjonsskjema */}
       <div className="grid lg:grid-cols-5 gap-16 lg:gap-20 items-start">
-        <FadeUp className="lg:col-span-2 lg:sticky top-32">
+        <FadeUp className="lg:col-span-2">
           <h2 className="font-heading text-4xl font-[300] tracking-tight mb-8 text-[#111111]">Be om verdivurdering</h2>
           <p className="text-lg text-[#666666] font-light mb-10 leading-relaxed">
             Send inn detaljer om din bil, så tar vi raskt kontakt med deg for et uforpliktende tilbud. 
@@ -91,53 +91,53 @@ export default function SelgBil() {
           </div>
         </FadeUp>
         
-        <FadeUp delay={0.2} className="lg:col-span-3 bg-transparent border border-black/10 rounded-none p-10 md:p-12">
+        <FadeUp delay={0.2} className="lg:col-span-3 bg-transparent border border-black/10 rounded-lg p-10 md:p-12">
           <form className="space-y-8">
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="firstName" className="text-xs uppercase tracking-widest text-black/50 font-medium">Fornavn *</label>
-                <input type="text" id="firstName" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Ola" required />
+                <input type="text" id="firstName" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Ola" required />
               </div>
               <div className="space-y-2">
                 <label htmlFor="lastName" className="text-xs uppercase tracking-widest text-black/50 font-medium">Etternavn *</label>
-                <input type="text" id="lastName" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Nordmann" required />
+                <input type="text" id="lastName" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Nordmann" required />
               </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="email" className="text-xs uppercase tracking-widest text-black/50 font-medium">E-post *</label>
-                <input type="email" id="email" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="din@epost.no" required />
+                <input type="email" id="email" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="din@epost.no" required />
               </div>
               <div className="space-y-2">
                 <label htmlFor="phone" className="text-xs uppercase tracking-widest text-black/50 font-medium">Telefonnummer *</label>
-                <input type="tel" id="phone" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="99 99 99 99" required />
+                <input type="tel" id="phone" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="99 99 99 99" required />
               </div>
             </div>
 
             <div className="space-y-2">
               <label htmlFor="regno" className="text-xs uppercase tracking-widest text-black/50 font-medium">Registreringsnummer *</label>
-              <input type="text" id="regno" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm uppercase focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="AB 12345" required />
+              <input type="text" id="regno" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm uppercase focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="AB 12345" required />
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="mileage" className="text-xs uppercase tracking-widest text-black/50 font-medium">Kilometerstand *</label>
-                <input type="text" id="mileage" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="f.eks 120 000" required />
+                <input type="text" id="mileage" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="f.eks 120 000" required />
               </div>
               <div className="space-y-2">
                 <label htmlFor="price" className="text-xs uppercase tracking-widest text-black/50 font-medium">Ønsket pris</label>
-                <input type="text" id="price" className="flex h-12 w-full rounded-none border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Valgfritt" />
+                <input type="text" id="price" className="flex h-12 w-full rounded-md border border-black/20 bg-transparent px-4 py-2 text-sm focus-visible:outline-none focus:border-black transition-colors placeholder:text-black/30" placeholder="Valgfritt" />
               </div>
             </div>
 
             <div className="space-y-2">
               <label htmlFor="message" className="text-xs uppercase tracking-widest text-black/50 font-medium">Ekstra info</label>
-              <textarea id="message" rows={4} className="flex min-h-[120px] w-full rounded-none border border-black/20 bg-transparent px-4 py-3 text-sm focus-visible:outline-none focus:border-black transition-colors resize-y placeholder:text-black/30" placeholder="Nevn viktig utstyr, servicehistorikk, eller mangler..."></textarea>
+              <textarea id="message" rows={4} className="flex min-h-[120px] w-full rounded-md border border-black/20 bg-transparent px-4 py-3 text-sm focus-visible:outline-none focus:border-black transition-colors resize-y placeholder:text-black/30" placeholder="Nevn viktig utstyr, servicehistorikk, eller mangler..."></textarea>
             </div>
             
-            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center rounded-none bg-[#111111] px-8 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+            <button type="submit" className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#111111] px-8 py-4 text-xs uppercase tracking-widest font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
               <Send className="mr-3 h-3.5 w-3.5" />
               Send inn forespørsel
             </button>

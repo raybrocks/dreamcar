@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-medium mb-8 text-white">Snarveier</h4>
+            <h4 className="text-xs uppercase tracking-widest font-medium mb-8 text-white">Snarveier</h4>
             <ul className="space-y-4 text-[13px] font-light text-slate-400">
               <li><Link href="/biler" className="hover:text-white transition-colors">Se alle biler til salgs</Link></li>
               <li><Link href="/selg-bil" className="hover:text-white transition-colors">Vi selger bilen for deg</Link></li>
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-medium mb-8 text-white">Kontakt</h4>
+            <h4 className="text-xs uppercase tracking-widest font-medium mb-8 text-white">Kontakt</h4>
             <ul className="space-y-5 text-[13px] font-light text-slate-400">
               <li className="flex items-start">
                 <MapPin className="w-4 h-4 mr-4 shrink-0 text-white/50 mt-0.5" />
@@ -62,7 +62,7 @@ export default function Footer() {
 
           {/* Opening Hours */}
           <div>
-            <h4 className="text-xs uppercase tracking-[0.2em] font-medium mb-8 text-white">Åpningstider</h4>
+            <h4 className="text-xs uppercase tracking-widest font-medium mb-8 text-white">Åpningstider</h4>
             <ul className="space-y-3 text-[13px] font-light text-slate-400">
               <li className="flex justify-between items-center border-b border-white/5 pb-2"><span>Man - Fre</span> <span>09:00 - 17:00</span></li>
               <li className="flex justify-between items-center border-b border-white/5 pb-2"><span>Torsdag</span> <span>09:00 - 19:00</span></li>

@@ -50,7 +50,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* Explicitly apply the heading font only to large, title-like elements */
+h1, h2:not(.text-xs):not(.text-sm):not(.text-base):not(.text-lg):not(.text-xl), h3:not(.text-xs):not(.text-sm):not(.text-base):not(.text-lg):not(.text-xl), .font-heading {
   font-family: var(--font-heading);
   font-weight: 300;
+}
+
+/* Ensure small headline variants naturally drop back to the cleaner sans font for better readability */
+h4, h5, h6, 
+h2.text-xs, h2.text-sm, h2.text-base, h2.text-lg, h2.text-xl,
+h3.text-xs, h3.text-sm, h3.text-base, h3.text-lg, h3.text-xl {
+  font-family: var(--font-sans);
 }

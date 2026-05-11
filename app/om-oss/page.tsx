@@ -8,7 +8,7 @@ export default function OmOss() {
   return (
     <div className="container mx-auto px-4 py-24 lg:py-32 max-w-6xl">
       <FadeUp className="text-center mb-24 max-w-4xl mx-auto cursor-default">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Om selskapet</h2>
+        <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Om selskapet</h2>
         <h1 className="font-heading text-5xl md:text-7xl lg:text-[80px] font-[300] tracking-tight mb-8 text-[#111111] leading-[0.95]">
           Velkommen til <br className="hidden md:block"/>
           <span className="italic">Dream Car.</span>
@@ -33,7 +33,7 @@ export default function OmOss() {
           </div>
         </FadeUp>
         
-        <FadeUp delay={0.2} className="relative aspect-[4/5] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-black/5 bg-slate-100 flex items-center justify-center group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <FadeUp delay={0.2} className="relative aspect-[4/5] rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-black/5 bg-slate-100 flex items-center justify-center group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <Image 
             src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=800&auto=format&fit=crop" 
             alt="Dream Car team" 
@@ -48,7 +48,7 @@ export default function OmOss() {
         </FadeUp>
       </div>
 
-      <FadeUp className="border border-black/10 rounded-none p-12 lg:p-24 mb-32 relative overflow-hidden bg-[#fdfcfb]">
+      <FadeUp className="border border-black/10 rounded-lg p-12 lg:p-24 mb-32 relative overflow-hidden bg-[#fdfcfb]">
         <div className="absolute top-0 right-0 w-64 h-64 bg-black/5 blur-[100px] -mr-32 -mt-32 rounded-full pointer-events-none" />
         <div className="grid md:grid-cols-2 gap-16 relative z-10">
           <div className="space-y-6">
@@ -109,7 +109,7 @@ export default function OmOss() {
         <p className="text-xl lg:text-2xl font-light text-[#111111] leading-relaxed mb-12">
           Dream Car skal være mer enn en bilforhandler. Vi setter kunden først, bygger langsiktige relasjoner og skaper ekte verdier.
         </p>
-        <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none bg-[#111111] px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+        <Link href="/kontakt" className="inline-flex items-center justify-center rounded-full bg-[#111111] px-10 py-4 text-xs uppercase tracking-widest font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
           Kontakt oss
         </Link>
       </FadeUp>

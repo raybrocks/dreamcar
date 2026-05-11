@@ -22,7 +22,7 @@ export default function Home() {
         
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl text-center">
           <FadeUp>
-            <div className="inline-flex items-center rounded-none border border-white/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium text-white mb-10 backdrop-blur-md">
+            <div className="inline-flex items-center rounded-lg border border-white/20 bg-transparent px-5 py-2 text-xs uppercase tracking-widest font-medium text-white mb-10 backdrop-blur-md">
               <ShieldCheck className="w-3.5 h-3.5 mr-3" />
               Din bilforhandler i Vennesla
             </div>
@@ -34,11 +34,11 @@ export default function Home() {
               Vi vet at bilkjøp kan føles usikkert. Derfor leveres alle våre biler med ny tilstandsrapport, fersk EU-kontroll og inntil 12 måneders garanti.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link href="/biler" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none bg-white px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-black hover:bg-slate-200 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+              <Link href="/biler" className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-[12px] uppercase tracking-[0.1em] font-medium text-black hover:bg-slate-200 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
                 Se våre biler
                 <ArrowRight className="w-3.5 h-3.5 ml-3" />
               </Link>
-              <Link href="/selg-bil" className="w-full sm:w-auto inline-flex items-center justify-center rounded-none border border-white/20 bg-transparent px-10 py-4 text-[12px] uppercase tracking-[0.15em] font-medium text-white hover:bg-white/10 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+              <Link href="/selg-bil" className="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-10 py-4 text-[12px] uppercase tracking-[0.1em] font-medium text-white hover:bg-white/10 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
                 Vi selger bilen for deg
               </Link>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
       <section className="py-32 bg-[#fdfcfb]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp className="text-center max-w-3xl mx-auto mb-24">
-            <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Om oss</h2>
+            <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Om oss</h2>
             <h3 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-8 text-[#111111]">
               Hvorfor velge Dream Car?
             </h3>
@@ -78,7 +78,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             <FadeUp delay={0.1} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute inset-0 border border-black/5 rounded-lg group-hover:border-black/10 transition-colors duration-500" />
               <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
               <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <ShieldCheck className="w-5 h-5 stroke-[1.5]" />
@@ -90,7 +90,7 @@ export default function Home() {
             </FadeUp>
             
             <FadeUp delay={0.2} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute inset-0 border border-black/5 rounded-lg group-hover:border-black/10 transition-colors duration-500" />
               <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
               <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <FileText className="w-5 h-5 stroke-[1.5]" />
@@ -102,7 +102,7 @@ export default function Home() {
             </FadeUp>
             
             <FadeUp delay={0.3} className="bg-transparent p-10 relative overflow-hidden group hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-400 ease-out">
-              <div className="absolute inset-0 border border-black/5 rounded-none group-hover:border-black/10 transition-colors duration-500" />
+              <div className="absolute inset-0 border border-black/5 rounded-lg group-hover:border-black/10 transition-colors duration-500" />
               <div className="absolute top-0 left-0 w-0 h-0.5 bg-black transition-all duration-500 ease-out group-hover:w-full" />
               <div className="w-12 h-12 flex items-center justify-center mb-10 border border-black/10 text-black group-hover:scale-110 transition-transform duration-500 ease-out">
                 <Wrench className="w-5 h-5 stroke-[1.5]" />
@@ -120,7 +120,7 @@ export default function Home() {
       <section className="py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <FadeUp className="order-2 lg:order-1 relative h-[600px] lg:h-[700px] rounded-none overflow-hidden border border-black/5 group">
+            <FadeUp className="order-2 lg:order-1 relative h-[600px] lg:h-[700px] rounded-lg overflow-hidden border border-black/5 group">
               <Image 
                 src="/dreamcar2.avif" 
                 alt="Kunde får overlevert bil" 
@@ -130,7 +130,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-700 ease-out" />
               <div className="absolute bottom-10 left-10 right-10">
-                <div className="bg-white/10 backdrop-blur-md p-8 rounded-none border border-white/20 transition-transform duration-500 ease-out translate-y-2 group-hover:translate-y-0">
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 transition-transform duration-500 ease-out translate-y-2 group-hover:translate-y-0">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex text-white gap-1">
                       <Star className="w-4 h-4 fill-current" />
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             </FadeUp>
             <FadeUp className="order-1 lg:order-2">
-              <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Prosessen</h2>
+              <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Prosessen</h2>
               <h3 className="font-heading text-4xl md:text-5xl font-[300] tracking-tight mb-8 text-[#111111] leading-tight">
                 Slik fungerer en bilhandel hos oss
               </h3>
@@ -206,7 +206,7 @@ export default function Home() {
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Lån fra 0,- egenkapital</li>
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Svar på få minutter</li>
               </ul>
-              <Link href="/finansiering" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
+              <Link href="/finansiering" className="inline-flex items-center text-xs uppercase tracking-widest font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
                 Les mer <ArrowRight className="w-3.5 h-3.5 ml-3 transition-transform duration-300 ease-out group-hover:translate-x-2" />
               </Link>
             </FadeUp>
@@ -223,7 +223,7 @@ export default function Home() {
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Vi håndterer alle henvendelser</li>
                 <li className="flex items-center text-sm font-light text-white/80"><CheckCircle2 className="w-4 h-4 mr-4 text-white/40" /> Trygt og raskt oppgjør</li>
               </ul>
-              <Link href="/selg-bil" className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
+              <Link href="/selg-bil" className="inline-flex items-center text-xs uppercase tracking-widest font-medium text-white/80 group-hover:text-white transition-colors duration-300 relative z-10">
                 Be om vurdering <ArrowRight className="w-3.5 h-3.5 ml-3 transition-transform duration-300 ease-out group-hover:translate-x-2" />
               </Link>
             </FadeUp>
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <FadeUp delay={0.1} className="order-2 lg:order-1 grid grid-cols-2 gap-4 group">
               <div className="space-y-4 pt-12">
-                <div className="relative h-[300px] rounded-none overflow-hidden bg-slate-100 flex items-center justify-center">
+                <div className="relative h-[300px] rounded-lg overflow-hidden bg-slate-100 flex items-center justify-center">
                   <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår salgssjef" fill className="object-cover opacity-50 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-700 ease-out" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply pointer-events-none">
                     <User className="w-20 h-20 text-slate-400 stroke-[1]" />
@@ -245,7 +245,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="relative h-[400px] rounded-none overflow-hidden bg-slate-100 flex items-center justify-center">
+                <div className="relative h-[400px] rounded-lg overflow-hidden bg-slate-100 flex items-center justify-center">
                   <Image src="https://images.unsplash.com/photo-1588508064977-ceba9828d578?q=80&w=400&auto=format&fit=crop" alt="Vår daglige leder" fill className="object-cover opacity-50 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-700 ease-out" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 flex items-center justify-center mix-blend-multiply pointer-events-none">
                     <User className="w-24 h-24 text-slate-400 stroke-[1]" />
@@ -255,7 +255,7 @@ export default function Home() {
             </FadeUp>
             
             <FadeUp className="order-1 lg:order-2">
-              <div className="inline-flex items-center rounded-none border border-black/20 bg-transparent px-5 py-2 text-xs uppercase tracking-[0.2em] font-medium mb-10 text-black/60 transition-colors duration-300">
+              <div className="inline-flex items-center rounded-lg border border-black/20 bg-transparent px-5 py-2 text-xs uppercase tracking-widest font-medium mb-10 text-black/60 transition-colors duration-300">
                 <Users className="w-3.5 h-3.5 mr-3" />
                 Lokale og tilgjengelige
               </div>
@@ -271,18 +271,18 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-8 mb-12">
                 <div className="group/item">
-                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Besøk oss</h4>
+                  <h4 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Besøk oss</h4>
                   <p className="text-sm font-medium text-[#111111] transition-colors duration-300">Bilveien 1</p>
                   <p className="text-sm text-[#666666] font-light">4700 Vennesla</p>
                 </div>
                 <div className="group/item">
-                  <h4 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Kontakt</h4>
+                  <h4 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-3 group-hover/item:text-black/60 transition-colors duration-300">Kontakt</h4>
                   <p className="text-sm font-medium text-[#111111]">383 60 066</p>
                   <p className="text-sm text-[#666666] font-light">post@dreamcar.no</p>
                 </div>
               </div>
 
-              <Link href="/kontakt" className="inline-flex items-center justify-center rounded-none bg-[#111111] px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
+              <Link href="/kontakt" className="inline-flex items-center justify-center rounded-full bg-[#111111] px-10 py-4 text-xs uppercase tracking-widest font-medium text-white hover:bg-black/80 transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]">
                 Ta kontakt
               </Link>
             </FadeUp>

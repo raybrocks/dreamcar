@@ -5,7 +5,7 @@ export default function Bildeler() {
   return (
     <div className="container mx-auto px-4 py-24 lg:py-32 max-w-6xl">
       <div className="text-center mb-20 cursor-default">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-medium text-black/40 mb-4">Utstyr og deler</h2>
+        <h2 className="text-xs uppercase tracking-widest font-medium text-black/40 mb-4">Utstyr og deler</h2>
         <h1 className="font-heading text-5xl md:text-6xl font-[300] tracking-tight mb-8 text-[#111111]">
           Din totalleverandør av <br className="hidden md:block"/><span className="italic">deler og tilbehør</span>
         </h1>
@@ -58,7 +58,7 @@ export default function Bildeler() {
           </div>
         </div>
 
-        <div className="md:col-span-3 bg-[#111111] text-white p-10 lg:p-16 rounded-none relative">
+        <div className="md:col-span-3 bg-[#111111] text-white p-10 lg:p-16 rounded-lg relative">
           <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 blur-[50px] -mr-16 -mt-16 rounded-full pointer-events-none" />
           
           <Mail className="w-10 h-10 text-white/50 mb-8 stroke-[1.5]" />
@@ -74,7 +74,7 @@ export default function Bildeler() {
             </a>
           </div>
           
-          <a href="mailto:salg-dreamcar@huba.as" className="inline-flex items-center justify-center rounded-none bg-white text-black hover:bg-slate-200 px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 w-full sm:w-auto">
+          <a href="mailto:salg-dreamcar@huba.as" className="inline-flex items-center justify-center rounded-full bg-white text-black hover:bg-slate-200 px-10 py-4 text-xs uppercase tracking-widest font-medium transition-all duration-300 w-full sm:w-auto">
             Send forespørsel
           </a>
         </div>
